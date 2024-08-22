@@ -1,0 +1,42 @@
+    <!--Bubbles Source Code-->
+    <style>
+      /* Define the bubble background */
+      .bubble-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: 40px 40px;
+        pointer-events: none;
+        overflow: hidden;
+        clip-path: inset(0 0 0 0);
+        /* Maganda ito kapag nalagpas yung Blur Effect sa another div or section */
+        filter: blur(40px);
+        /* Ensures bubbles don't interfere with content */
+      }
+
+      /* Style the bubbles */
+      .bubble {
+        position: absolute;
+        width: 180px;
+        height: 600px;
+        /* background-color: rgba(74, 222, 113, 0.8);*/
+        /* Blue color with transparency */
+        pointer-events: none;
+        /* Ensures bubbles don't interfere with content */
+      }
+    </style>
+
+    <div class="bubble-background">
+      <!-- Bubbles -->
+      <div class="bubble"
+        style="transform: rotate(45deg); background-color: rgba(138, 237, 214, 0.8); top: 10px auto; right: auto;">
+      </div>
+      <div class="bubble"
+        style="transform: rotate(-45deg); background-color: rgba(176, 242, 155, 0.8); top: 300px; right: 100%;"></div>
+      <div class="bubble"
+        style="transform: rotate(95deg); background-color: rgba(241, 155, 109, 0.904); top: 30px; left: 80%;"></div>
+
+    </div>
+    <!--Bubble Source Code End-->
